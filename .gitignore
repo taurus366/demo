@@ -1,0 +1,12 @@
+.idea
+.dart_tool
+build
+tmp
+log
+media
+.packages
+pubspec.lock
+config/centryl-nginx
+config/config.yaml
+# Project exclude paths
+/node_modules/

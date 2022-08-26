@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+@media only screen and (min-width: 768px) {
+  /*Desktop*/
+  nav.ui-left {
+    width: 200px;
+  }
+
+  .ui-main-menu li.ui-menu-element a span {
+    font-size: 13px;
+    color: $background-hover;
+  }
+
+  .ui-page.menu-hide nav.ui-left {
+    transform: translateX(-200px);
+  }
+
+  section {
+    padding: 50px 0 0 200px;
+  }
+
+  .ui-main-menu ul {
+    width: 200px;
+  }
+  .ui-main-menu li.ui-menu-element a {
+    flex-direction: row;
+    border-bottom: 1px solid $border-hover;
+    padding: 0.25rem 0;
+    transition: text-indent .15s, height .3s;
+  }
+
+  .ui-main-menu li.ui-menu-element a .icon {
+    height: 4rem !important;
+    width: 4rem !important;
+  }
+
+  .ui-main-menu li.ui-menu-element {
+    text-align: left;
+  }
+
+}
+
+.ui-page.menu-hide nav.ui-top {
+  padding-left: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .ui-left .ui-menu-control {
+    background-size: 100% !important;
+  }
+  //mobile
+  .ui-gadgets > .ui-container.gadget-outer > div .statistics > div {
+    flex-wrap: wrap !important;
+  }
+  .ui-gadgets > .ui-container.gadget-outer > div .statistics > div .stats {
+    flex: 1 1 100% !important;
+  }
+  .g-buttons > div .ui-button {
+    width: 50% !important;
+    margin: 0 !important;
+    margin-bottom: 1rem !important;
+  }
+  .ui-menu-control {
+    background: $theme-w10 !important;
+    color: transparent !important;
+    overflow: hidden;
+  }
+}
+
+//everything
+section {
+  background-color: darken($background-hover, 0.78);
+}
+
+.ui-main-menu {
+  background: $theme-color;
+  background: linear-gradient(0deg, $theme-b20 0%, $theme-b20 25%, $theme-b10 50%, $theme-color 75%, $theme-w10 100%);
+}
+
+.ui-button {
+  &.important {
+    color: rgba(255, 255, 255, 0.9) !important;
+    border: 1px solid transparent;
+    background-color: $theme-w10 !important;
+    box-shadow: 0 1px 2px 0 $theme-color;
+  }
+
+  &.warning {
+    color: rgba(255, 255, 255, 0.9) !important;
+    border: 1px solid transparent;
+    background-color: $button-background-warning !important;
+    box-shadow: 0 1px 2px 0 $button-hover-background-warning;
+  }
+}
+
+.ui-menu .ui-button.important:not(.disabled):hover {
+  background-color: $theme-color !important;
+  border: 1px solid transparent;
+  color: #fff !important;
+}
+
+.ui-slide.ui-scroll ul.ui-list li {
+  border-bottom: 1px solid transparent;
+}
+
+
+.ui-gadgets > .ui-container.gadget-outer > div .statistics > div .stats .inner .value {
+  font-size: 1.25rem;
+  margin-top: 0.5em;
+  margin-left: 0.25em;
+}
+
+nav.ui-top {
+  background: $theme-color;
+  background: linear-gradient(260deg, $theme-b20 0%, $theme-b10 25%, $theme-color 50%, $theme-color 75%, $theme-w10 100%);
+  padding-left: 0;
+}
+
+//.ui-button:not(.disabled):hover .icon svg:not(.sync):not(.filter_list):not(.more_vert):not(.printer) use {
+//  fill: white !important;
+//}
+
+.ui-win .ui-win-close, .ui-win .ui-win-max, .ui-win .ui-win-min {
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 5px;
+}
+
+
+
+.ui-scroll .track > div {
+  background-color: $theme-g10;
+}
+
+.ui-container.ui-row > div.ui-auto, .ui-container.ui-column > div.ui-auto {
+  overflow-x: hidden;
+}
+
+.ui-slide.ui-scroll ul.ui-list li:hover, .ui-slide.ui-scroll ul.ui-list li:hover *, .ui-slide.ui-scroll ul.ui-list li.hover {
+  background-color: $background-hover;
+  border-bottom: 1px solid $border-hover;
+}
+
+.ui-field-select:focus:not(.disabled) > .inner {
+  box-shadow: 0 0 3px 1px $theme-w30;
+}
+
+table.ui-table-list > thead > tr > td {
+  background-color: $background-hover;
+  border: 1px solid $border-hover;
+}
+
+.ui-field-input.focus:not(.disabled) > .inner > .input > input,
+.ui-field-input.focus:not(.disabled) > .inner > .input > textarea {
+  box-shadow: 0 0 3px 1px $theme-w30;
+  border-radius: 10px;
+}
+
+table.ui-table-list > tbody > tr > td {
+  border: 1px solid $border-hover;
+}
+
+.ui-field-check input[type=checkbox]:not(:checked) + label:after, .ui-field-check input[type=checkbox]:checked + label:after, .ui-field-check input[type=radio]:not(:checked) + label:after, .ui-field-check input[type=radio]:checked + label:after {
+  background-color: $theme-w10;
+}
+
+.ui-tabs > div .ui-win-tab.active {
+  opacity: 1;
+  background-color: $theme-w30;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.ui-tabs {
+  margin-left: 1em;
+}
+
+table.ui-table-list > tbody > tr:hover > td {
+  background-color: $background-hover;
+  opacity: 1 !important;
+}
+
+.ui-tab > .ui-tab-options ul li.active {
+  border-color: $border-hover;
+  border-top-color: $theme-color;
+  border-bottom: $background-hover;
+}
+
+.ui-tab > .ui-tab-options ul li:hover {
+  background-color: $background-hover;
+  border-color: $border-hover;
+  border-bottom: 1px solid transparent;
+}
+
+.ui-table-grid > tbody > tr:hover > td {
+  background-color: $background-hover;
+}
+
+.ui-tab:not(.single) > .ui-tab-content {
+  border-top: 1px solid $border-hover;
+}
+
+.ui-tab > .ui-tab-options ul li span {
+  padding: 0.5rem 2rem;
+}
+
+.ui-gadgets > .ui-container.gadget-outer > div .chart > h2, .ui-gadgets > .ui-container.gadget-outer > div .statistics > h2 {
+  border-bottom: 1px solid $theme-g10;
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
+.ui-menu {
+  padding: 0.5rem;
+}
+
+.ui-field-input .input .separator {
+  border-bottom: 1px solid transparent !important;
+  background: transparent !important;
+}
+
+.ui-sub-menu {
+  background: $theme-color;
+  background: linear-gradient(180deg, $theme-b10 0%, $theme-color 50%, $theme-w10 100%);
+}
+
+.ui-gadgets > .ui-container.gadget-outer > div .statistics > div .stats .inner {
+  background-color: $background-hover;
+  border-radius: 10px;
+}
+
+.ui-button {
+  box-shadow: none;
+  border-radius: 10px;
+}
+
+.ui-field-select {
+  border-radius: 10px;
+}
+
+.ui-button .inner.button-title {
+  padding-left: 1em !important;
+  padding-right: 1.5em !important;
+}
+
+.ui-field-input > .inner, .ui-field-select > .inner {
+  border-radius: 10px;
+}
+
+.ui-win div.title h3 {
+  color: $theme-b20;
+}
+
+.ui-button:focus:not(.disabled) {
+  border: 1px dotted $theme-color;
+}
+
+.ui-win.ui-win-shadowed {
+  border-radius: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.ui-page.menu-hide .ui-menu-button {
+  margin-left: 0.5em;
+}
+
+.container div .ui-button:not(.disabled):not(.warning):hover {
+  background-color: $background-hover;
+  color: black;
+}
+
+.ui-button:not(.disabled):hover {
+  //qwerty
+  border: 1px solid $border-hover;
+  background-color: $theme-w10;
+  -webkit-box-shadow: 0 0 2px 0 $background-hover;
+  -moz-box-shadow: 0 0 2px 0 $background-hover;
+  box-shadow: 0 0 2px 0 $background-hover;
+}
+
+.ui-button:not(.disabled):hover .icon svg use {
+  //fill: black;
+}
+
+.ui-addons .ui-button, .ui-addons .ui-button:focus {
+  border: 1px solid transparent;
+}
+
+.ui-addons .profile .ui-button:hover {
+  background-color: $theme-b10;
+}
+
+.ui-addons .ui-button {
+  margin: 5px;
+}
+
+.g-buttons > div .ui-button {
+  border: 1px solid transparent;
+}
+
+@media only screen and (min-width: 768px) {
+  .ui-main-menu li.ui-menu-element:hover a, .ui-main-menu li.ui-menu-element.selected a {
+    text-indent: 5px;
+  }
+}
+
+.ui-main-menu li.ui-menu-element:hover a, .ui-main-menu li.ui-menu-element.selected a {
+  background-color: $theme-b10;
+  .icon svg use {
+    fill: $background-hover !important;
+  }
+  span {
+    color: $background-hover !important;
+  }
+  &:after {
+    width: 100%;
+  }
+}
+
+.ui-main-menu li.ui-menu-element a::after {
+  content: ' ';
+  width: 0;
+  -webkit-transition: width .5s;
+  transition: width .5s;
+  height: 2px;
+  position: absolute;
+  display: block;
+  background: $theme-color-2;
+  bottom: 0;
+  left: 0;
+}
+
+.ui-addons .ui-timer {
+  color: $background-hover;
+}
+
+.ui-slide.ui-scroll ul.ui-list li.current, .ui-slide.ui-scroll ul.ui-list li.current * {
+  background-color: $theme-color !important;
+}
+
+.ui-sub-menu li.ui-menu-element:hover, .ui-sub-menu li.ui-menu-element.selected {
+  transition: background-color 0.75s ease;
+  background-color: $theme-b10;
+}
+
+
+.ui-button.important:not(.disabled) {
+  box-shadow: 0 1px 2px 0 $theme-g10;
+}
+
+
+.ui-menu-control {
+  background: $theme-w10 url("/packages/cl/images/logo_wide.png") no-repeat center center !important;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.15);
+}
+
+.ui-label {
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+
+.type2 {
+  .ui-top {
+    .logo {
+      margin: 0 50px !important;
+    }
+
+  }
+}
+
+.ui-top {
+  .logo {
+    background: url("/packages/cl/images/logo_wide.png") no-repeat center center;
+    width: 150px;
+    height: 45px;
+    margin: 0 20px;
+    @include respond-max(phone) {
+      display: none;
+    }
+  }
+}
+
